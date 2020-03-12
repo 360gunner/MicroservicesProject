@@ -8,6 +8,8 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
+
+
 @SpringBootApplication
 @EnableZuulProxy
 @EnableDiscoveryClient
@@ -22,5 +24,7 @@ public class ApiGatewayApplication {
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
 	}
+	
+	
 
 }
