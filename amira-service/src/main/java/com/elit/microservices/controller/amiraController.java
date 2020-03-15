@@ -35,6 +35,19 @@ public class amiraController {
 		return new ArrayList<String>();
 	}
 	
+	@HystrixCommand(commandKey = "amira2", fallbackMethod = "amiraTaht2")
+	@GetMapping("/tt2")
+	public List<String> amira2() {
+		List l=new ArrayList();
+		l.add("amiiira");
+		l.add("etiiir");
+		l.add(port);
+		return (ArrayList) l;
+	}
+	public List<String> amiraTaht2(){
+		return new ArrayList<String>();
+	}
+	
 	
 	
 
